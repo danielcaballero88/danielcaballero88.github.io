@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+            :root {
+                --dark-gray:  rgb(51, 51, 51);
+                --darkish-gray: rgb(59, 59, 59);
+                --whiteish: #faebd7;
+            }
+
+            * {
+                margin: 0;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: 'Noto Sans', sans-serif;
+                color: var(--whiteish);
+                position: relative;
+            }
+
+            #navbar {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: var(--dark-gray);
+                width: 100%;
+                position: fixed;
+                top: 0;
+                z-index: 10;
+            }
+
+            #navbar-logo {
+                height: 50px;
+                width: 50px;
+                margin-right: auto;
+                margin-left: 5px;
+                border-radius: 5px;
+                background-color: var(--whiteish);
+            }
+
+            #navbar-logo:hover {
+                opacity: 0.5;
+            }
+
+            #navbar ul {
+                height: 50px;
+                width: 50vw;
+                margin: 0;
+                padding: 5px;
+                display: flex;
+                justify-content: stretch;
+                list-style-type: none;
+            }
+
+            #navbar ul li {
+                display: block;
+                width: 100%;
+            }
+
+            #navbar ul li a {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                border-radius: 5px;
+                text-decoration: none;
+                color: inherit;
+                font-size: 1.5rem;
+            }
+
+            #navbar ul li a:hover {
+                background-color: var(--darkish-gray);
+            }
+
+            main {
+                margin-top: 0;
+            }
+
+            section {
+                height: 100vh;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 8em 0;
+                position: relative;
+            }
+
+            h1 {
+                margin-bottom: 2rem;
+            }
+
+            section#whoami-section {
+                background-color: rgb(44, 82, 97);
+            }
+
+            #me {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            #my-pic {
+                height: 20vh;
+                border-radius: 40%;
+            }
+
+            #my-name {
+                font-size: 3rem;
+                font-weight: bold;
+                margin-left: 2rem;
+            }
+
+            .item-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            .item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .icon {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: auto;
+                margin-left: 0.5rem;
+                border-radius: 50%;
+                background-color: var(--whiteish);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icon img {
+                width: 70%;
+            }
+
+            .desc {
+                display: flex;
+                justify-items: flex-start;
+                align-items: center;
+                height: 4rem;
+            }
+
+            .desc p {
+                padding-left: 2rem;
+                font-size: 2rem;
+            }
+
+            #contact-me {
+                width: 80%;
+                display: flex;
+                flex-direction: column;;
+                align-items: center;
+            }
+
+            #contact-me h2 {
+                margin-bottom: 1em;
+            }
+
+
+            .row {
+                flex-direction: row;
+            }
+
+            .transparent {
+                background-color: transparent !important;
+            }
+
+            .go-arrow-div {
+                display: block;
+                width: 2em;
+                height: 2em;
+                position: absolute;
+            }
+
+            .go-arrow-div:hover {
+                opacity: 0.7;
+            }
+
+            .go-arrow-div img {
+                width:100%;
+            }
+
+            .go-down {
+                bottom: 1em;
+                background-image: url("assets/icons/png/down-arrow.png");
+                background-size: contain
+            }
+
+            .go-up {
+                top: 5em;
+                background-image: url("assets/icons/png/up-arrow.png");
+                background-size: contain;
+            }
+
+            section#skills-section {
+                background-color: rgb(105, 61, 44);
+            }
+
+            .columns-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 80vw;
+            }
+
+            .column {
+                background-color: var(--whiteish);
+                color: black;
+                width: 20vw;
+                height: 40vh;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 2rem 1rem;
+                text-align: center;
+            }
+
+            .column h2 {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .small-desc {
+                height: 40%;
+                font-size: 0.8rem;
+            }
+
+            .skill-icon {
+                margin: 0 auto;
+            }
+
+            .tools ul {
+                list-style: none;
+                padding: 0;
+                font-size: 1rem;
+                height: 40%;
+            }
+
+            section#portfolio-section {
+                background-color: rgb(47, 90, 47);
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .portfolio-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 3rem;
+                width: 60vw;
+                max-width: 700px;
+            }
+
+            .portfolio-item {
+                display: flex;
+                flex-direction: column;
+                justify-items: flex-start;
+                align-items: center;
+                border-radius: 5%;
+                overflow: hidden;
+            }
+
+            .portfolio-item-header {
+                display: block;
+                width: 100%;
+                background-color: var(--dark-gray);
+            }
+
+            .portfolio-item-header h2 {
+                font-size: 1rem;
+                color: var(--whiteish);
+                width: 100%;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+
+            .portfolio-item-image {
+                background-color: var(--darkish-gray);
+            }
+
+            .portfolio-item-image img {
+                width: 90%;
+                border-radius: 2%;
+                display: block;
+                margin: 1rem auto;
+            }
+
+            a.link-in-div {
+                display:block;
+                width: 100%;
+            }
+
+            footer {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background-color: var(--dark-gray);
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                z-index: 10;
+            }
+
+            .img-in-div {
+                width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="navbar-logo" class="transparent">
+                <img class="img-in-div" src="assets/icons/png/dev-icon.png">
+            </div>
+            <ul id="navbar-links">
+                <li><a href="#whoami-section">Me</a></li>
+                <li><a href="#skills-section">My Stack</a></li>
+                <li><a href="#portfolio-section">My Work</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="whoami-section">
+                <div id="me">
+                    <img
+                        id="my-pic"
+                        src="me.jpg"
+                        alt="A picture of me"
+                    >
+                    <p id="my-name">Daniel Caballero</p>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="assets/icons/png/001-binary code.png"/>
+                        </div>
+                        <div class="desc">
+                            <p>Backend Developer</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="assets/icons/png/017-homepage.png"/>
+                        </div>
+                        <div class="desc">
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="assets/icons/png/035-programming.png"/>
+                        </div>
+                        <div class="desc">
+                            <p>Data Analyst</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-me">
+                    <h2>Get in touch!</h2>
+                    <div class="item-list row">
+                        <div class="item row">
+                            <div class="icon transparent">
+                                <a class="link-in-div" href="https://www.facebook.com/daniel.caballero.507">
+                                    <img src="assets/icons/png/fb-icon.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="icon transparent">
+                                <a class="link-in-div" href="https://t.me/danielcaballero88">
+                                    <img src="assets/icons/png/telegram-icon.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <div class="icon transparent">
+                                <a class="link-in-div" href="mailto:d.caballero.ok@gmail.com">
+                                    <img src="assets/icons/png/gmail-icon.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="go-arrow-div go-down" href="#skills-section"></a>
+            </section>
+            <section id="skills-section">
+                <a class="go-arrow-div go-up" href="#whoami-section"></a>
+                <h1>Tools & Technologies</h1>
+                <div class="columns-container">
+                    <div class="column">
+                        <div class="small-desc">
+                            <div class="icon skill-icon">
+                                <img src="assets/icons/png/001-binary code.png"/>
+                            </div>
+                            <h2>Backend</h2>
+                            <p>I like setting up web applications using Python frameworks Flask and Django. I also enjoy prepping up custom Linux Servers.</p>
+                        </div>
+                        <div class="tools">
+                            <h2>Tools:</h2>
+                            <ul>
+                                <li>Linux</li>
+                                <li>Apache</li>
+                                <li>Flask</li>
+                                <li>Django</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="small-desc">
+                            <div class="icon skill-icon">
+                                <img src="assets/icons/png/017-homepage.png"/>
+                            </div>
+                            <h2>Frontend</h2>
+                            <p>I design and create small web pages using HTML5 and CSS3. I'm also learning more technologies like Bootstrap and JavaScript.</p>
+                        </div>
+                        <div class="tools">
+                            <h2>Tools:</h2>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="small-desc">
+                            <div class="icon skill-icon">
+                                <img src="assets/icons/png/035-programming.png"/>
+                            </div>
+                            <h2>Data Analyst</h2>
+                            <p>I perform data analysis over big data sets, employing Python and a firm grasp of Mathematics and Statistcs.</p>
+                        </div>
+                        <div class="tools">
+                            <h2>Tools:</h2>
+                            <ul>
+                                <li>SQL</li>
+                                <li>Pandas</li>
+                                <li>Seaborn</li>
+                                <li>Scipy</li>
+                                <li>Jupyter-Notebook</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a class="go-arrow-div go-down" href="#portfolio-section"></a>
+            </section>
+            <section id="portfolio-section">
+                <a class="go-arrow-div go-up" href="#skills-section"></a>
+                <h1>My Recent Work</h1>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-header">
+                            <h2>Tribute Page</h2>
+                        </div>
+                        <div class="portfolio-item-image">
+                            <a href="https://codepen.io/khawabonga/full/xxwLpdw" target="_blank">
+                                <img src="assets/images/portf-01-tribute.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-header">
+                            <h2>Survey Form</h2>
+                        </div>
+                        <div class="portfolio-item-image">
+                            <a href="https://codepen.io/khawabonga/full/LYRmzXO" target="_blank">
+                                <img src="assets/images/portf-02-survey.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-header">
+                            <h2>Product Page</h2>
+                        </div>
+                        <div class="portfolio-item-image">
+                            <a href="https://codepen.io/khawabonga/full/abmGqOd" target="_blank">
+                                <img src="assets/images/portf-03-product.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-header">
+                            <h2>Documentation Template</h2>
+                        </div>
+                        <div class="portfolio-item-image">
+                            <a href="https://codepen.io/khawabonga/full/abmGPLr" target="_blank">
+                                <img src="assets/images/portf-04-doc.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </footer>
+    </body>
+</html>
