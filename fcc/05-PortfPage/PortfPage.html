@@ -76,6 +76,12 @@
                 font-size: 1.5rem;
             }
 
+            @media (max-width: 800px) {
+                #navbar ul li a {
+                    font-size: 1rem;
+                }
+            }
+
             #navbar ul li a:hover {
                 background-color: var(--darkish-gray);
             }
@@ -100,7 +106,7 @@
                 margin-bottom: 2rem;
             }
 
-            section#whoami-section {
+            section#welcome-section {
                 background-color: rgb(44, 82, 97);
             }
 
@@ -256,7 +262,7 @@
                 height: 40%;
             }
 
-            section#portfolio-section {
+            section#projects {
                 background-color: rgb(47, 90, 47);
                 height: auto;
                 min-height: 100vh;
@@ -285,7 +291,7 @@
                 background-color: var(--dark-gray);
             }
 
-            .portfolio-item-header h2 {
+            .project-title {
                 font-size: 1rem;
                 color: var(--whiteish);
                 width: 100%;
@@ -318,6 +324,12 @@
                 position: absolute;
                 bottom: 0;
                 z-index: 10;
+                color: var(--whiteish)
+            }
+
+            footer a {
+                text-decoration: none;
+                color: inherit;
             }
 
             .img-in-div {
@@ -334,13 +346,15 @@
                 </a>
             </div>
             <ul id="navbar-links">
-                <li><a href="#whoami-section">Me</a></li>
+                <li><a href="#welcome-section">Me</a></li>
                 <li><a href="#skills-section">My Stack</a></li>
-                <li><a href="#portfolio-section">My Work</a></li>
+                <li><a href="#projects">My Work</a></li>
             </ul>
         </nav>
         <main>
-            <section id="whoami-section">
+            <section id="welcome-section">
+                <h1>Welcome!</h1>
+                <p>Let me introduce my self, I am:</p>
                 <div id="me">
                     <img
                         id="my-pic"
@@ -399,12 +413,19 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="item row">
+                            <div class="icon transparent">
+                                <a id="profile-link" class="link-in-div" href="https://github.com/khawabonga" target="_blank">
+                                    <img src="assets/icons/png/github-icon.png">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a class="go-arrow-div go-down" href="#skills-section"></a>
             </section>
             <section id="skills-section">
-                <a class="go-arrow-div go-up" href="#whoami-section"></a>
+                <a class="go-arrow-div go-up" href="#welcome-section"></a>
                 <h1>Tools & Technologies</h1>
                 <div class="columns-container">
                     <div class="column">
@@ -464,15 +485,15 @@
                         </div>
                     </div>
                 </div>
-                <a class="go-arrow-div go-down" href="#portfolio-section"></a>
+                <a class="go-arrow-div go-down" href="#projects"></a>
             </section>
-            <section id="portfolio-section">
+            <section id="projects">
                 <a class="go-arrow-div go-up" href="#skills-section"></a>
                 <h1>My Recent Work</h1>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <div class="portfolio-item-header">
-                            <h2>Tribute Page</h2>
+                            <h2 class="project-title">Tribute Page</h2>
                         </div>
                         <div class="portfolio-item-image">
                             <a href="https://codepen.io/khawabonga/full/xxwLpdw" target="_blank">
@@ -482,7 +503,7 @@
                     </div>
                     <div class="portfolio-item">
                         <div class="portfolio-item-header">
-                            <h2>Survey Form</h2>
+                            <h2 class="project-title">Survey Form</h2>
                         </div>
                         <div class="portfolio-item-image">
                             <a href="https://codepen.io/khawabonga/full/LYRmzXO" target="_blank">
@@ -492,7 +513,7 @@
                     </div>
                     <div class="portfolio-item">
                         <div class="portfolio-item-header">
-                            <h2>Product Page</h2>
+                            <h2 class="project-title">Product Page</h2>
                         </div>
                         <div class="portfolio-item-image">
                             <a href="https://codepen.io/khawabonga/full/abmGqOd" target="_blank">
@@ -502,7 +523,7 @@
                     </div>
                     <div class="portfolio-item">
                         <div class="portfolio-item-header">
-                            <h2>Documentation Template</h2>
+                            <h2 class="project-title">Documentation Template</h2>
                         </div>
                         <div class="portfolio-item-image">
                             <a href="https://codepen.io/khawabonga/full/abmGPLr" target="_blank">
@@ -514,7 +535,7 @@
             </section>
         </main>
         <footer>
-            Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            <p>Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
         </footer>
     </body>
 </html>
