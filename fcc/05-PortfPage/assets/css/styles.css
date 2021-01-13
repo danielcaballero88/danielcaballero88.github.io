@@ -241,7 +241,7 @@ section#skills-section {
     border-radius: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1em 1em;
     text-align: center;
@@ -252,6 +252,7 @@ section#skills-section {
 .small-desc {
     height: auto;
     min-height: 40%;
+    margin-bottom: 1em;
 }
 
 .small-desc h2 {
@@ -265,7 +266,8 @@ section#skills-section {
 .tools ul {
     list-style: none;
     padding: 0;
-    height: 40%;
+    height: auto;
+    margin-bottom: 1em;
 }
 
 
