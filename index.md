@@ -8,7 +8,7 @@ I get the time.
 
 In the meantime, you can check out [my CV/resume][1] in PDF format.
 
-[1]: https://danielcaballero88.github.io/cv/cv.pdf
+[1]: https://danielcaballero88.github.io/resume/danielcaballero_resume.pdf
 
 ## Contact
 
@@ -20,4 +20,3 @@ e-mail: danielcaballero88@gmail.com
 <!--
 [Portfolio Page](./fcc/05-PortfPage/PortfPage.html)
 -->
-
