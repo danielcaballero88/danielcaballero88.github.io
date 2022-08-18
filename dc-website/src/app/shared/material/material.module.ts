@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
 
 
 /**
@@ -11,7 +13,13 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule,
+    MatIconModule,
+  ],
+  providers: [MatIconRegistry],
+  exports: [
+    MatIconModule
   ]
 })
 export class MaterialModule { }
