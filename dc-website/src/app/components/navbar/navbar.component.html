@@ -1,1 +1,19 @@
-<p>navbar works!</p>
+<div class="menu-btn" (click)="menuOpen = !menuOpen">
+  <i class="fa-solid fa-bars fa-xl"></i>
+</div>
+<nav>
+  <ul class="link-list" [class.open]="menuOpen">
+    <li class="link-item">
+      <a href="#" class="link"> Home </a>
+    </li>
+    <li class="link-item">
+      <a href="#" class="link"> About Me </a>
+    </li>
+    <li class="link-item">
+      <a href="#" class="link"> My Projects </a>
+    </li>
+    <li class="link-item">
+      <a href="#" class="link"> Contact Me </a>
+    </li>
+  </ul>
+</nav>

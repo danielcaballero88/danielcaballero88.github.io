@@ -1,0 +1,41 @@
+@import "colors";
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: visible;
+
+  &.open {
+    visibility: visible;
+  }
+
+  .link-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: $background-color;
+    list-style-type: none;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+
+    &.open {
+      transform: translateY(0);
+    }
+  }
+}
