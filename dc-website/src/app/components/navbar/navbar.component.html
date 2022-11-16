@@ -2,8 +2,15 @@
   <i class="fa-solid fa-bars fa-xl"></i>
 </div>
 <nav>
-  <ul class="link-list" [class.open]="menuOpen">
-    <li class="link-item">
+  <ul class="link-list" [class.menu-open]="menuOpen">
+    <li
+      *ngFor="let link of linkList"
+      class="link-item"
+      [class.menu-open]="menuOpen"
+    >
+      <a [href]="link.url" class="link">{{ link.label }}</a>
+    </li>
+    <!-- <li class="link-item">
       <a href="#" class="link"> Home </a>
     </li>
     <li class="link-item">
@@ -14,6 +21,6 @@
     </li>
     <li class="link-item">
       <a href="#" class="link"> Contact Me </a>
-    </li>
+    </li> -->
   </ul>
 </nav>
