@@ -17,9 +17,9 @@ nav {
   left: 0;
   width: 100vw;
   opacity: 0.98;
-  visibility: visible;
+  visibility: hidden;
 
-  &.open {
+  &.menu-open {
     visibility: visible;
   }
 
