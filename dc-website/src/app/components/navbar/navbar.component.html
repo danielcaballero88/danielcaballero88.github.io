@@ -8,19 +8,9 @@
       class="link-item"
       [class.menu-open]="menuOpen"
     >
-      <a [href]="link.url" class="link">{{ link.label }}</a>
+      <a [href]="link.url" class="link" [class.active]="router.url == link.url">
+        {{ link.label }}
+      </a>
     </li>
-    <!-- <li class="link-item">
-      <a href="#" class="link"> Home </a>
-    </li>
-    <li class="link-item">
-      <a href="#" class="link"> About Me </a>
-    </li>
-    <li class="link-item">
-      <a href="#" class="link"> My Projects </a>
-    </li>
-    <li class="link-item">
-      <a href="#" class="link"> Contact Me </a>
-    </li> -->
   </ul>
 </nav>

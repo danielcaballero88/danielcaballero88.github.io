@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   public menuOpen: boolean = false;
 
-  public linkList: { label: string; url: string }[] = [
-    { label: 'Home', url: '#' },
-    { label: 'About Me', url: '#' },
-    { label: 'My Projects', url: '#' },
-    { label: 'Contact Me', url: '#' },
+  public linkList: { label: string; url: string; active: boolean }[] = [
+    { label: 'Home', url: '/', active: false },
+    { label: 'About Me', url: '/about', active: false },
+    { label: 'My Projects', url: '/projects', active: false },
+    { label: 'Contact Me', url: '/contact', active: false },
   ];
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit(): void {}
 }
