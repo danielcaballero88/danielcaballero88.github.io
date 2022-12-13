@@ -1,0 +1,78 @@
+@import "colors";
+
+.about {
+  .bio-and-image {
+    height: 50vh;
+    width: 100%;
+
+    background: linear-gradient(
+        to right,
+        rgba($background-color, 0.9),
+        rgba($background-color, 0.3)
+      ),
+      url("/assets/images/daniel.jpg") center top 20%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    h2 {
+      color: $secondary-color;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 0.3rem;
+    }
+
+    .bio {
+      width: 80%;
+      text-align: center;
+      padding-bottom: 2rem;
+
+      .text-secondary {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .jobs-list {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    .job-item {
+      background: lighten($background-color, 10%);
+      padding: 0.5rem;
+      border-bottom: 5px solid $secondary-color;
+
+      h2 {
+        color: $secondary-color;
+      }
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      h4 {
+        font-size: 0.9em;
+        margin: 0.3rem 0;
+      }
+
+      ul {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+
+        li {
+          margin-bottom: 0.3rem;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
