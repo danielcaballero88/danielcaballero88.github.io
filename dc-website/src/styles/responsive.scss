@@ -1,0 +1,18 @@
+@mixin media-md {
+  // iPad Mini portrait screen width.
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  // iPad Mini landscape screen width.
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  // Laptop screen width.
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

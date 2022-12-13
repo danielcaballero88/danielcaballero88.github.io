@@ -1,5 +1,6 @@
 @import "colors";
 @import "animations";
+@import "responsive";
 
 .menu-btn {
   position: absolute;
@@ -64,6 +65,34 @@ nav {
 
         &:hover {
           color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@include media-md {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  nav {
+    visibility: visible;
+
+    .link-list {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      .link-item {
+        transform: translateX(0);
+        display: inline;
+        padding-right: 1.5rem;
+
+        .link {
+          font-size: 1.5rem;
         }
       }
     }
