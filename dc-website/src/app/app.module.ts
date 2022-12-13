@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { SocialIconsComponent } from './components/social-icons/social-icons.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SocialIconsComponent } from './components/social-icons/social-icons.com
     NavbarComponent,
     HomeComponent,
     SocialIconsComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
