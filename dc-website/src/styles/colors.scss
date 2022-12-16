@@ -1,3 +1,13 @@
-$background-color: #272727;
+/* Background Image Colors */
+$silver-pink: rgba(198, 180, 174, 1);
+$copper-red: rgba(207, 122, 100, 1);
+$deep-taupe: rgba(133, 96, 87, 1);
+$chestnut: rgba(158, 60, 42, 1);
+$ebony: rgba(88, 87, 67, 1);
+$smoky-black: rgba(15, 15, 13, 1);
+$queen-blue: rgba(58, 112, 160, 1);
+$columbia-blue: rgba(193, 229, 251, 1);
+
+$background-color: $smoky-black;
 $primary-color: #fff;
 $secondary-color: #ff652f;
