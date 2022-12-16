@@ -9,9 +9,13 @@
 body {
   background-color: $background-color;
   color: $primary-color;
-  height: 100vh;
+  // min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+}
+
+app-root {
+  position: relative;
 }
 
 h1,

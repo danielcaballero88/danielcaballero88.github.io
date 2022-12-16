@@ -5,17 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { SocialIconsComponent } from './components/social-icons/social-icons.component';
 import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    SocialIconsComponent,
-    AboutComponent,
-  ],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, AboutComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
