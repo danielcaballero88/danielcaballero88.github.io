@@ -2,6 +2,10 @@
 
 .about {
   padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 
   .bio-and-image {
     height: 50vh;
@@ -41,7 +45,7 @@
 
   .jobs-list {
     width: 80%;
-    margin: 2rem auto 0 auto;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
