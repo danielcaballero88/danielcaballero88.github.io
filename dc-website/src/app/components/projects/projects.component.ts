@@ -20,8 +20,24 @@ export class ProjectsComponent implements OnInit {
       imageObj: {
         alt: 'Cloud Computing Concept Image',
         src: '/assets/images/projects/gcp-vm.jpg',
-        attributionLabel: 'Cloud Computing Vectors by Vecteezy',
+        attributionLabel: 'Image by Vecteezy',
         attributionUrl: 'https://www.vecteezy.com/free-vector/cloud-computing',
+      },
+    },
+    {
+      title: 'How to Set Up Notifications in Python',
+      linkObjs: [
+        {
+          label: 'Read Post',
+          url: 'https://dev.to/danielcaballero88/how-to-set-up-email-and-message-notifications-for-a-python-application-5f3l',
+          icon: 'dev',
+        },
+      ],
+      imageObj: {
+        alt: 'Notifications Concept Image',
+        src: '/assets/images/projects/notifications.jpg',
+        attributionLabel: 'Image by Vecteezy',
+        attributionUrl: 'https://www.vecteezy.com/free-photos',
       },
     },
   ];
