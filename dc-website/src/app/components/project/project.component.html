@@ -1,0 +1,22 @@
+<div class="project-item">
+  <div class="project-title">How to Spin Up a VM in GCP</div>
+  <img
+    src="/assets/images/projects/gcp-vm.jpg"
+    alt="Blog Note: How to Spin Up a VM in GCP"
+  />
+  <div class="links">
+    <div class="columns">
+      <div *ngFor="let linkObj of linkObjs" class="column">
+        <a [href]="linkObj.url" class="link">
+          <i [class]="linkObj.iconClass"></i> {{ linkObj.label }}
+        </a>
+      </div>
+    </div>
+    <div *ngIf="imageAttributionObj" class="image-attribution">
+      <a [href]="imageAttributionObj.url" class="link">
+        <i class="fa-solid fa-image"></i>
+        {{ imageAttributionObj.label }}
+      </a>
+    </div>
+  </div>
+</div>
