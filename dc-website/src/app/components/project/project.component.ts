@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProjectObj } from 'src/app/models/projects.model';
 
 @Component({
   selector: 'app-project',
@@ -6,11 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent implements OnInit {
-  @Input()
-  linkObjs: { label: string; url: string; iconClass: string }[] = [];
+  public iconClasses = {
+    dev: 'fa-brands fa-dev',
+    github: 'fab fa-github',
+    preview: 'fas fa-eye',
+  };
 
   @Input()
-  imageAttributionObj: { label: string; url: string } | null = null;
+  projectObj: ProjectObj | null = null;
 
   constructor() {}
 
