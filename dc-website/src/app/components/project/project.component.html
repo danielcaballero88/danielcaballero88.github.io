@@ -4,13 +4,17 @@
   <div class="links">
     <div class="columns">
       <div *ngFor="let linkObj of projectObj.linkObjs" class="column">
-        <a [href]="linkObj.url" class="link">
+        <a class="link" [href]="linkObj.url" target="_blank">
           <i [class]="iconClasses[linkObj.icon]"></i> {{ linkObj.label }}
         </a>
       </div>
     </div>
     <div *ngIf="projectObj.imageObj.attributionUrl" class="image-attribution">
-      <a [href]="projectObj.imageObj.attributionUrl" class="link">
+      <a
+        class="link"
+        [href]="projectObj.imageObj.attributionUrl"
+        target="_blank"
+      >
         <i class="fa-solid fa-image"></i>
         {{ projectObj.imageObj.attributionLabel }}
       </a>
