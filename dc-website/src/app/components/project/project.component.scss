@@ -11,9 +11,12 @@
     width: 100%;
     border-top: 2px solid $secondary-color;
     text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
     padding: 0.4rem 0;
     position: relative;
     z-index: 1;
+    white-space: nowrap;
     @include transition-ease;
   }
 

@@ -1,5 +1,6 @@
 @import "colors";
 @import "animations";
+@import "responsive";
 
 .projects {
   padding-bottom: 5rem;
@@ -37,5 +38,31 @@
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     margin-top: 2rem;
+  }
+
+  @include media-md {
+    .image {
+      height: 40vh;
+    }
+
+    .projects-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @include media-lg {
+    .image {
+      height: 45vh;
+    }
+
+    .projects-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @include media-xl {
+    .image {
+      height: 50vh;
+    }
   }
 }
