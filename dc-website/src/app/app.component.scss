@@ -1,5 +1,17 @@
 @import "colors";
 @import "animations";
+@import "responsive";
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+
+  @include media-md {
+    position: absolute;
+  }
+}
 
 main {
   height: 100%;
