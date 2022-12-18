@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
       ],
       imageObj: {
         alt: 'Cloud Computing Concept Image',
-        src: '/assets/images/projects/gcp-vm.jpg',
+        src: '/assets/images/projects/cloud-computing.jpg',
         attributionLabel: 'Image by Vecteezy',
         attributionUrl: 'https://www.vecteezy.com/free-vector/cloud-computing',
       },
@@ -38,6 +38,22 @@ export class ProjectsComponent implements OnInit {
         src: '/assets/images/projects/notifications.jpg',
         attributionLabel: 'Image by Vecteezy',
         attributionUrl: 'https://www.vecteezy.com/free-photos',
+      },
+    },
+    {
+      title: 'How to deploy to a Linux VM',
+      linkObjs: [
+        {
+          label: 'Read Post',
+          url: 'https://dev.to/danielcaballero88/how-to-deploy-your-program-to-run-periodically-in-a-linux-vm-in-gcp-compute-engine-4km6',
+          icon: 'dev',
+        },
+      ],
+      imageObj: {
+        alt: 'Deploy to Cloud Concept',
+        src: '/assets/images/projects/deploy-to-cloud.jpg',
+        attributionLabel: 'Image by Vecteezy',
+        attributionUrl: 'https://www.vecteezy.com/free-vector/cloud-computing',
       },
     },
   ];
