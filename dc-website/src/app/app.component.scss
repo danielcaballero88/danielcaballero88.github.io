@@ -21,30 +21,43 @@ main {
 footer {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
+  width: 100vw;
   align-items: center;
   position: absolute;
   bottom: 0rem;
   padding: 1rem;
 
-  .social-icons {
-    display: flex;
-    flex-direction: row;
+  .footer-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 
-    a {
-      padding: 0.4rem;
-      @include transition-ease;
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      left: 0;
+      bottom: 0;
 
-      &:hover {
-        color: $secondary-color;
+      a {
+        padding: 0.4rem;
+        @include transition-ease;
+
+        &:hover {
+          color: $secondary-color;
+        }
       }
+    }
+
+    .copyright {
+      font-size: 1rem;
+      text-align: right;
+      color: $primary-color;
+      white-space: nowrap;
+      position: absolute;
+      right: 0;
+      bottom: 0.7rem;
     }
   }
 
-  .copyright {
-    font-size: 1rem;
-    text-align: right;
-    color: $primary-color;
-  }
 }
