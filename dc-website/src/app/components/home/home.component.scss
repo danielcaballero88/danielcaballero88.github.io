@@ -1,4 +1,5 @@
 @import "colors";
+@import "responsive";
 
 .home {
   height: 100%;
@@ -17,7 +18,7 @@
   background-size: cover;
 
   .name {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #fff;
@@ -25,6 +26,24 @@
     .last-name {
       color: $secondary-color;
       font-weight: 700;
+    }
+  }
+
+  @include media-md {
+    .name {
+      font-size: 5rem;
+    }
+  }
+
+  @include media-lg {
+    .name {
+      font-size: 6rem;
+    }
+  }
+
+  @include media-xl {
+    .name {
+      font-size: 7rem;
     }
   }
 }
