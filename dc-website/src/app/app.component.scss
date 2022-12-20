@@ -27,36 +27,30 @@ footer {
   bottom: 0em;
   padding: 1em;
 
-  .footer-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0.4em;
+    bottom: 0;
 
-    .social-icons {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      left: 0;
-      bottom: 0;
+    a {
+      padding: 0.4em;
+      @include transition-ease;
 
-      a {
-        padding: 0.4em;
-        @include transition-ease;
-
-        &:hover {
-          color: $secondary-color;
-        }
+      &:hover {
+        color: $secondary-color;
       }
     }
+  }
 
-    .copyright {
-      font-size: 1em;
-      text-align: right;
-      color: $primary-color;
-      white-space: nowrap;
-      position: absolute;
-      right: 0;
-      bottom: 0.7em;
-    }
+  .copyright {
+    font-size: 1em;
+    text-align: right;
+    color: $primary-color;
+    white-space: nowrap;
+    position: absolute;
+    right: 0.4em;
+    bottom: 0.8em;
   }
 }
