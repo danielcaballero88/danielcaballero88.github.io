@@ -17,6 +17,11 @@
     url("/assets/images/daniel.jpg") center;
   background-size: cover;
 
+  .salute {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .name {
     font-size: 4rem;
     padding-bottom: 1rem;
@@ -27,6 +32,10 @@
       color: $secondary-color;
       font-weight: 700;
     }
+  }
+
+  .position {
+    font-size: 1.5rem;
   }
 
   @include media-md {
