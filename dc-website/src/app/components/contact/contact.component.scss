@@ -21,7 +21,7 @@
 
   h2 {
     font-size: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
   }
 
   .contact-list {
@@ -41,18 +41,14 @@
   }
 
   @include media-md {
-    .contact {
-      .contact-list {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    .contact-list {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @include media-lg {
-    .contact {
-      .contact-list {
-        grid-template-columns: repeat(3, 1fr);
-      }
+    .contact-list {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
