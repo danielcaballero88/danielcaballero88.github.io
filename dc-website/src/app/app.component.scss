@@ -20,6 +20,7 @@ main {
 
 footer {
   display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +29,9 @@ footer {
   padding: 1rem;
 
   .social-icons {
+    display: flex;
+    flex-direction: row;
+
     a {
       padding: 0.4rem;
       @include transition-ease;
@@ -39,6 +43,7 @@ footer {
   }
 
   .copyright {
+    display: block;
     font-size: 1rem;
     text-align: right;
     color: $primary-color;
