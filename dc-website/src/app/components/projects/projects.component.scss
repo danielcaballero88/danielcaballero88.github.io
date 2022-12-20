@@ -3,7 +3,7 @@
 @import "responsive";
 
 .projects {
-  padding-bottom: 5rem;
+  padding-bottom: 5em;
   min-height: calc(100 * var(--vh));
   display: flex;
   flex-direction: column;
@@ -29,15 +29,15 @@
 
   .title {
     color: $secondary-color;
-    margin-bottom: 2rem;
+    margin-bottom: 1em;
   }
 
   .projects-list {
     width: 70%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    margin-top: 2rem;
+    grid-gap: 2em;
+    margin-top: 2em;
   }
 
   @include media-md {

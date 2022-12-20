@@ -20,15 +20,15 @@
   background-size: cover;
 
   h2 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 3em;
+    margin-bottom: 2em;
   }
 
   .contact-list {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    font-size: 1.5rem;
+    grid-gap: 2em;
+    font-size: 1.5em;
 
     .contact-item {
       display: flex;

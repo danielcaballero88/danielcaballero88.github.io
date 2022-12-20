@@ -18,14 +18,14 @@
   background-size: cover;
 
   .salute {
-    font-size: 1.5rem;
-    padding-bottom: 0.5rem;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
   }
 
   .name {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    font-size: 4em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.2em;
     border-bottom: 2px solid #fff;
 
     .last-name {
@@ -35,24 +35,24 @@
   }
 
   .position {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   @include media-md {
     .name {
-      font-size: 5rem;
+      font-size: 5em;
     }
   }
 
   @include media-lg {
     .name {
-      font-size: 6rem;
+      font-size: 6em;
     }
   }
 
   @include media-xl {
     .name {
-      font-size: 7rem;
+      font-size: 7em;
     }
   }
 }

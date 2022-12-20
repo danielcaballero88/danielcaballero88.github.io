@@ -11,9 +11,9 @@
     width: 100%;
     border-top: 2px solid $secondary-color;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
-    padding: 0.4rem 0;
+    padding: 0.4em 0;
     position: relative;
     z-index: 1;
     white-space: nowrap;
@@ -61,7 +61,7 @@
       position: absolute;
       height: 10%;
       bottom: 0;
-      font-size: 0.6rem;
+      font-size: 0.6em;
       z-index: 1;
       align-self: flex-end;
       display: flex;
@@ -71,7 +71,7 @@
         flex-direction: row;
 
         i {
-          margin-right: 0.2rem;
+          margin-right: 0.2em;
         }
       }
     }

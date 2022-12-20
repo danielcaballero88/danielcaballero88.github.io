@@ -5,8 +5,8 @@
 .menu-btn {
   position: absolute;
   z-index: 1;
-  right: 1rem;
-  top: 1.5rem;
+  right: 1em;
+  top: 1.5em;
   height: 20px;
   width: 28px;
   cursor: pointer;
@@ -33,7 +33,7 @@ nav {
     overflow: hidden;
     background: $background-color;
     list-style-type: none;
-    padding-right: 1rem;
+    padding-right: 1em;
     transform: translateY(-100%);
     @include transition-ease;
 
@@ -57,9 +57,9 @@ nav {
 
       .link {
         display: inline-block;
-        font-size: 2rem;
+        font-size: 2em;
         text-transform: uppercase;
-        padding: 2rem 0;
+        padding: 1em 0;
         font-weight: 300;
         @include transition-ease;
 
@@ -90,10 +90,10 @@ nav {
       .link-item {
         transform: translateX(0);
         display: inline;
-        padding-right: 1.5rem;
+        padding-right: 1.5em;
 
         .link {
-          font-size: 1.5rem;
+          font-size: 1.5em;
         }
       }
     }

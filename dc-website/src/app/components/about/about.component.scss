@@ -1,7 +1,7 @@
 @import "colors";
 
 .about {
-  padding-bottom: 5rem;
+  padding-bottom: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,34 +25,34 @@
 
     h2 {
       color: $secondary-color;
-      padding-bottom: 1rem;
+      padding-bottom: 1em;
     }
 
     p {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.3em;
     }
 
     .bio {
       width: 80%;
       text-align: center;
-      padding-bottom: 2rem;
+      padding-bottom: 2em;
 
       .text-secondary {
-        padding-bottom: 1rem;
+        padding-bottom: 1em;
       }
     }
   }
 
   .jobs-list {
     width: 80%;
-    margin-top: 2rem;
+    margin-top: 2em;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 2em;
 
     .job-item {
       background: lighten($background-color, 10%);
-      padding: 0.5rem;
+      padding: 0.5em;
       border-bottom: 5px solid $secondary-color;
 
       h2 {
@@ -61,20 +61,20 @@
 
       h2,
       h3 {
-        margin: 0.5rem 0;
+        margin: 0.5em 0;
       }
 
       h4 {
         font-size: 0.9em;
-        margin: 0.3rem 0;
+        margin: 0.3em 0;
       }
 
       ul {
-        margin-left: 1rem;
-        margin-top: 0.5rem;
+        margin-left: 1em;
+        margin-top: 0.5em;
 
         li {
-          margin-bottom: 0.3rem;
+          margin-bottom: 0.3em;
           text-align: justify;
         }
       }
