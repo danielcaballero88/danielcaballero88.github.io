@@ -3,8 +3,9 @@
 @import "responsive";
 
 .projects {
-  padding-bottom: 5em;
   min-height: calc(100 * var(--vh));
+  width: 100%;
+  padding-bottom: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
