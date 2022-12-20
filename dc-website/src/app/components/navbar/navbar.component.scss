@@ -29,7 +29,7 @@ nav {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: calc(100 * var(--vh));
     overflow: hidden;
     background: $background-color;
     list-style-type: none;

@@ -3,8 +3,8 @@
 
 .contact {
   height: 100%;
-  min-height: 100vh;
-  padding-top: 45vh;
+  min-height: calc(100 * var(--vh));
+  padding-top: calc(45 * var(--vh));
   overflow: hidden;
   display: flex;
   flex-direction: column;

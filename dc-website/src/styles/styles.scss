@@ -7,11 +7,14 @@
 }
 
 body {
+  --app-height: 100vh;
+  --vh: calc(var(--app-height) / 100);
   background-color: $background-color;
   color: $primary-color;
-  // min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+
+  font-size: 12px;
 }
 
 app-root {
