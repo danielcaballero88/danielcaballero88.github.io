@@ -2,12 +2,13 @@
   <div class="image">
     <h1 class="title">My Projects</h1>
   </div>
-
-  <div class="projects-list">
-    <app-project
-      *ngFor="let projectObj of projectObjs"
-      [projectObj]="projectObj"
-    >
-    </app-project>
+  <div class="projects-list-container">
+    <div class="projects-list">
+      <app-project
+        *ngFor="let projectObj of projectObjs"
+        [projectObj]="projectObj"
+      >
+      </app-project>
+    </div>
   </div>
 </div>
