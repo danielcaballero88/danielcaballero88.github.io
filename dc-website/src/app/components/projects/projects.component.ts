@@ -56,6 +56,25 @@ export class ProjectsComponent implements OnInit {
         attributionUrl: 'https://www.vecteezy.com/free-vector/cloud-computing',
       },
     },
+    {
+      title: 'How to Implement a Simple Python Scraper',
+      linkObjs: [
+        {
+          label: 'Read Post',
+          url: 'https://dev.to/danielcaballero88/how-to-implement-a-simple-scraper-with-python-57ic',
+          icon: 'dev',
+        },
+        {
+          label: 'Github repo',
+          url: 'https://github.com/danielcaballero88/scrape-cgeonline',
+          icon: 'github',
+        },
+      ],
+      imageObj: {
+        alt: 'Implement a Python Scraper Concept',
+        src: '/assets/images/projects/python-scraper.jpg',
+      },
+    },
   ];
 
   constructor() {}
