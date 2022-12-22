@@ -42,7 +42,7 @@
     .projects-list {
       width: 70%;
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(100%, 1fr);
       grid-gap: 2em;
       margin-top: 2em;
     }
@@ -55,7 +55,7 @@
 
     .projects-list-container {
       .projects-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(45%, 1fr));
       }
     }
   }
@@ -67,7 +67,7 @@
 
     .projects-list-container {
       .projects-list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(30%, 1fr));
       }
     }
   }
