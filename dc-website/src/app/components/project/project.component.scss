@@ -20,8 +20,17 @@
     @include transition-ease;
   }
 
-  img {
-    width: 100%;
+  .image-container {
+    position: relative;
+    min-width: 100%;
+    padding: 37.5% 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
   }
 
   .links {

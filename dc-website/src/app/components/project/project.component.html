@@ -1,6 +1,8 @@
 <div *ngIf="projectObj" class="project-item">
   <div class="project-title">{{ projectObj.title }}</div>
-  <img [src]="projectObj.imageObj.src" [alt]="projectObj.imageObj.alt" />
+  <div class="image-container">
+    <img [src]="projectObj.imageObj.src" [alt]="projectObj.imageObj.alt" />
+  </div>
   <div class="links">
     <div class="columns">
       <div *ngFor="let linkObj of projectObj.linkObjs" class="column">
