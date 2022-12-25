@@ -9,6 +9,20 @@ import { ProjectObj } from 'src/app/models/projects.model';
 export class ProjectsComponent implements OnInit {
   public projectObjs: ProjectObj[] = [
     {
+      title: 'My Personal Website',
+      linkObjs: [
+        {
+          label: 'Github repo',
+          url: 'https://github.com/danielcaballero88/danielcaballero88.github.io',
+          icon: 'github',
+        },
+      ],
+      imageObj: {
+        alt: 'Implement a Python Scraper Concept',
+        src: '/assets/images/projects/personal-website.png',
+      },
+    },
+    {
       title: 'Simple Python Scraper',
       linkObjs: [
         {
