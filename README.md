@@ -9,6 +9,6 @@ Also I could have used another simpler framework than Angular, but Angular is th
 https://dev.to/danielcaballero88/how-to-deploy-angular-website-to-github-pages-jhb
 
 1. Merge changes to branch `gh-pages`
-2. `ng build`
+2. `ng build --configuration=production --base-href=https://danielcaballero88.github.io/`
 3. Copy `dist` to `docs`
 4. Push.
