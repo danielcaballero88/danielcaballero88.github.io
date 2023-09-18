@@ -23,6 +23,34 @@ export class ProjectsComponent implements OnInit {
       },
     },
     {
+      title: 'A Django App for Keeping Score',
+      linkObjs: [
+        {
+          label: 'Github repo',
+          url: 'https://github.com/danielcaballero88/django-scoring-app',
+          icon: 'github',
+        },
+      ],
+      imageObj: {
+        alt: 'Implement a Python Scraper Concept',
+        src: '/assets/images/projects/django.jpg',
+      },
+    },
+    {
+      title: 'A Textual UI for Nordvpn in Linux',
+      linkObjs: [
+        {
+          label: 'Github repo',
+          url: 'https://github.com/danielcaballero88/nordvpn-textual-ui',
+          icon: 'github',
+        },
+      ],
+      imageObj: {
+        alt: 'Implement a Python Scraper Concept',
+        src: '/assets/images/projects/textual.png',
+      },
+    },
+    {
       title: 'Simple Python Scraper',
       linkObjs: [
         {
