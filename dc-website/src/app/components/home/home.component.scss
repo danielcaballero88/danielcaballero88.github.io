@@ -18,15 +18,33 @@
   background-size: cover;
 
   .salute {
-    font-size: 1.5em;
     padding-bottom: 0.5em;
+    font-size: 1.5em;
+    @include media-md {
+      font-size: 2.0em;
+    }
+    @include media-lg {
+      font-size: 2.5em;
+    }
+    @include media-xl {
+      font-size: 3.0em;
+    }
   }
 
   .name {
-    font-size: 4em;
     padding-bottom: 0.2em;
     margin-bottom: 0.2em;
     border-bottom: 2px solid #fff;
+    font-size: 4em;
+    @include media-md {
+      font-size: 5em;
+    }
+    @include media-lg {
+      font-size: 6em;
+    }
+    @include media-xl {
+      font-size: 7em;
+    }
 
     .last-name {
       color: $secondary-color;
@@ -36,23 +54,14 @@
 
   .position {
     font-size: 1.5em;
-  }
-
-  @include media-md {
-    .name {
-      font-size: 5em;
+    @include media-md {
+      font-size: 2.0em;
     }
-  }
-
-  @include media-lg {
-    .name {
-      font-size: 6em;
+    @include media-lg {
+      font-size: 2.5em;
     }
-  }
-
-  @include media-xl {
-    .name {
-      font-size: 7em;
+    @include media-xl {
+      font-size: 3.0em;
     }
   }
 }

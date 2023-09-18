@@ -31,6 +31,15 @@
   .title {
     color: $secondary-color;
     margin-bottom: 1em;
+    font-size: 3em;
+
+    @include media-md {
+      font-size: 4em;
+    }
+
+    @include media-lg {
+      font-size: 5em;
+    }
   }
 
   .projects-list-container {
